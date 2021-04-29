@@ -1,0 +1,60 @@
+<%- include("partials/header.ejs") %>
+<link type="text/css" rel="stylesheet" href="/search_title.css">
+</head>
+<body>
+
+    <!-- first banner -->
+    <div class="container jumbotron first">
+        The movie-info app
+        <h2>Your one place for getting movie information</h2>
+    </div>
+ 
+    <!-- data box -->
+    <div class="container jumbotron second">   
+        Title: <%=data["Title"]%> <br>
+        Rated: <%=data["Rated"]%> <br>
+        Released Date: <%=data["Released"]%> <br>
+        Runtime: <%=data["Runtime"]%> <br>
+        Genre: <%=data["Genre"]%> <br>
+        Director: <%=data["Director"]%> <br>
+        Writer: <%=data["Writer"]%> <br>
+        Actors: <%=data["Actors"]%> <br>
+        Language: <%=data["Language"]%> <br>
+        Country: <%=data["Country"]%> <br>
+        Awards: <%=data["Awards"]%> <br>
+        Production House: <%=data["Production"]%> <br> <br>
+
+        <!-- plot box -->
+        <div>
+            Plot: <%=data["Plot"]%> <br>
+        </div>
+
+        <br>
+        <!-- rating box -->
+        Rating:
+        <div>
+            <% for (let i=0;i<=data["Ratings"].length-1;i++){ %>
+            <tr>
+                <td> <%= data["Ratings"][i]["Source"] %> </td>
+                <td> <%= data["Ratings"][i]["Value"] %> </td>
+                <br>
+            </tr>
+            <% } %>
+        </div>
+                
+        <!-- website button if website is present -->
+        <% if (data["Website"]!=="N/A") { %>
+        <button type="button" class="btn btn-success">
+            <a href="data["Website"]">Website</a>
+        </button>
+        <% } %>
+
+        <!-- poster button -->
+        <a href="<%=data['Poster']%>">
+            <button class="btn btn-success">
+                    Download Poster
+            </button>
+        </a>
+    </div>
+
+<%- include("partials/footer.ejs") %>

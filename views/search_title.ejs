@@ -1,0 +1,52 @@
+<%- include("partials/header.ejs") %>
+<link type="text/css" rel="stylesheet" href="/search_title.css">
+</head>
+<body>
+        
+    <!-- first banner -->
+    <div class="container jumbotron first">
+        The movie-info app
+        <h2>Your one place for getting movie information</h2>
+    </div>
+ 
+    <!-- checking response -->
+    <% if (data["Response"]==="True") { %>
+    <!-- data box -->
+    <div class="container jumbotron second">
+        <% for (let i=0;i<=data["Search"].length-1;i++){ %>
+
+        <!-- movie card -->
+        <div class="movie_card">
+            <table class="second"><tr>
+
+            <!-- text information -->
+            <td class="col-lg-10">
+                Title:  <%= data["Search"][i]["Title"] %> <br>
+                Release Year:  <%= data["Search"][i]["Year"] %> <br>
+                Genre: <%= data["Search"][i]["Type"] %> <br> <br>
+                
+                <form action="/post_id" method="POST">
+                    <button class="btn btn-success" name="movie_id" value="<%= data['Search'][i]['imdbID'] %>">Read More</button>
+                </form>
+            </td>
+
+            <!-- poster -->
+            <td class="col-lg-2">
+                <img src="<%= data['Search'][i]['Poster'] %>" alt="poster" height="300px">
+            </td>
+            </tr></table>
+
+        </div>
+        <% } %>
+
+    </div>
+    <% } else { %>
+        <div class="container jumbotron second no_result">
+            No result found! If you think that this is an error,<br>
+            Then please report it too site administrator at e-mail: kartikeya30@gmail.com. <br> <br>
+            <a href="/"><button class="btn btn-success home_button"> Home </button></a>
+        </div>
+    <% } %>
+    
+
+<%- include("partials/footer.ejs") %>

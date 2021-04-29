@@ -1,0 +1,27 @@
+ <%- include("partials/header.ejs") %>
+    <link type="text/css" rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+    <!-- first banner -->
+    <div class="container jumbotron first">
+        The movie-info app
+        <h2>Your one place for getting movie information</h2>
+    </div>
+
+    <!-- search box -->
+    <div class="container jumbotron second">
+        <h2>Search movie name</h2>
+        
+        <form action="/post_title" method="POST">
+            <div class="input-group">
+                <input type="text" class="form-control" name="movie_title" placeholder="movie name">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    
+<%- include("partials/footer.ejs") %>
