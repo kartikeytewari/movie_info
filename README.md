@@ -37,4 +37,4 @@ Instructions to run the application in your local machine:
     <li> Then visit localhost:Port_id to view the app. </li>
 </ol>
 
-The website is live on <a href="https://movie-gnome.herokuapp.com/">this</a> link.
+The website is live on <a href="https://radiant-island-93715.herokuapp.com/">this</a> link.
