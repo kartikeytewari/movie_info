@@ -30,4 +30,4 @@ The website is deployed on Heroku. To run the project locally, follow these step
 - Run `nodemon` to serve the application.
 - Then visit localhost:8080 to view the app.
 
-The website is live on ![this](https://radiant-island-93715.herokuapp.com/)this link.
+The website is live on <a href="https://radiant-island-93715.herokuapp.com/">this</a> link.
