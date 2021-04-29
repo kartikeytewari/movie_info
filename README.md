@@ -26,8 +26,8 @@ The tech stack used is:
     <li> Git </li>
 </ul>
 
-The website itself is deployed on Heroku.
-Instructions to run the application in your local machine:
+The website itself is deployed on Heroku. <br>
+To run the project locally, follow these steps:
 <ol>
     <li> Go to the folder where you want to install the application. </li>
     <li> Run the command git clone https://github.com/kartikeytewari/movie_info. </li>
@@ -37,4 +37,4 @@ Instructions to run the application in your local machine:
     <li> Then visit localhost:Port_id to view the app. </li>
 </ol>
 
-The website is live on <a href="https://radiant-island-93715.herokuapp.com/">this</a> link.
+The website is live on <a href="https://radiant-island-93715.herokuapp.com/"1>this</a> link.
