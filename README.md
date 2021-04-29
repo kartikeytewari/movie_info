@@ -7,7 +7,7 @@
 ![Express](https://img.shields.io/badge/-Express-blue)
 ![OMDB](https://img.shields.io/badge/-OMDB_API-blue)
 
-This is a website where a user can access information about diffrent movies, based on there title, or the words that are in the title. It can access data about movies that are released in India or Internationally, and have a good search engine ensuring good response time for searching data. The website uses OMDB API for getting movie data.
+This is a website where a user can access information about different movies, based on there title, or the words that are in the title. It can access data about movies that are released in India or Internationally, and have a good search engine ensuring good response time for searching data. The website uses OMDB API for getting movie data.
 
 <hr>
 
@@ -30,4 +30,4 @@ The website is deployed on Heroku. To run the project locally, follow these step
 - Run `nodemon` to serve the application.
 - Then visit localhost:8080 to view the app.
 
-The website is live on <a href="https://radiant-island-93715.herokuapp.com/"1>this</a> link.
+The website is live on ![this](https://radiant-island-93715.herokuapp.com/)this link.
