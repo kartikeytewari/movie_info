@@ -1,0 +1,44 @@
+{
+  "name": "movie_app",
+  "version": "1.0.0",
+  "description": "A website to compare different movies.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartikeytewari/movie_app.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "express",
+    "ejs",
+    "body-parser",
+    "request",
+    "api",
+    "omdb_database",
+    "\"the",
+    "web",
+    "developer",
+    "bootcamp\"",
+    "\"colt",
+    "stelle\""
+  ],
+  "author": "Kartikey Tewari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kartikeytewari/movie_app/issues"
+  },
+  "homepage": "https://github.com/kartikeytewari/movie_app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "log-timestamp": "^0.3.0",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
+  }
+}
