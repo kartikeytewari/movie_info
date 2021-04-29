@@ -26,15 +26,13 @@ The tech stack used is:
     <li> Git </li>
 </ul>
 
-The website itself is deployed on Heroku. <br>
-To run the project locally, follow these steps:
+The website itself is deployed on Heroku. To run the project locally, follow these steps:
 <ol>
-    <li> Go to the folder where you want to install the application. </li>
-    <li> Run the command git clone https://github.com/kartikeytewari/movie_info. </li>
-    <li> Make a file called as api_key.js to store your personal OMDB API keys in the root directory. </li>
-    <li> Install NodeJS if you do not have it already. </li>
-    <li> Run node server.js to run the application. </li>
-    <li> Then visit localhost:Port_id to view the app. </li>
+    <li> Run the command `git clone https://github.com/kartikeytewari/movie_info` </li>
+    <li> Make `.env` folder in root of project that contains the api key for amdb api. </li>
+    <li> Run `npm install` to install all dependencies. </li>
+    <li> Run `nodemon` to serve the application. </li>
+    <li> Then visit localhost:808 to view the app. </li>
 </ol>
 
 The website is live on <a href="https://radiant-island-93715.herokuapp.com/"1>this</a> link.
