@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/kartikeytewari/movie_app#readme",
   "dependencies": {
-    "body-parser": "^2.2.2",
+    "body-parser": "^2.3.0",
     "dotenv": "^17.4.2",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
